@@ -4,13 +4,14 @@
 - [ ] Email (email)
 - [ ] Username (STR)
 - [ ] Password (STR)
-- [ ] PizzaSlices (INT)
+- [ ] PizzaSlicesTotal (INT)
+- [ ] PizzaSlicesWeekly (INT) (resets to 200 every week)
 - [ ] Wins (INT)
 - [ ] Loses (INT)
 - [ ] Favorite Teams (Array(Object)) (Team Reference)
 - [ ] Friends (Array(Object)) (User Reference)
 - [ ] Leagues (Array(Object)) (League Reference)
-- [ ] Wagers (Array(Object)) (Wager Reference)
+- [ ] Bets (Array(Object)) (Bet Reference)
 - [ ] GlobalRank (INT)
 
 ## Game Thread
@@ -18,12 +19,27 @@
 - [ ] Week (INT)
 - [ ] HomeTeam (Object) (Team Reference)
 - [ ] AwayTeam (Object) (Team Reference)
+- [ ] Bets (Array(Object)) (Bet Reference)
 - [ ] Winner (Object)
 - [ ] IsFinished (Boolean) 
 
-## Wager
+## Bet
 - [ ] ID (object ID)
 - [ ] Owner (Object) (User Reference)
 - [ ] OnGame (Object) (Game Thread Reference)
-- [ ] TeamWagered (Object) (Team Reference)
-- [ ] SlicesWagered (INT)
+- [ ] TeamBetOn (Object) (Team Reference)
+- [ ] SlicesBet (INT)
+
+## Team
+- [ ] ID (object ID)
+- [ ] Name (STR)
+- [ ] Wins (INT)
+- [ ] Losses (INT)
+- [ ] Draws (INT)
+
+## League
+- [ ] ID (object ID)
+- [ ] Name (STR)
+- [ ] Members (Array(Object)) (User Reference)
+- [ ] IsActive (Boolean)
+- [ ] Ranking (Array(Object)) (User Reference) (Ordered Descending)
