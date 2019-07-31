@@ -15,11 +15,9 @@
 
 ## Game Thread
 - [ ] ID (object ID)
-- [ ] HomeTeam (Object)
-- [ ] AwayTeam (Object)
-- [ ] WagerHomeTeam (Array(Object)) (User Reference)
-- [ ] WagerAwayTeam (Array(Object)) (User Reference)
-- [ ] WagerDraw (Array(Object)) (User Reference)
+- [ ] HomeTeam (Object) (Team Reference)
+- [ ] AwayTeam (Object) (Team Reference)
+- [ ] Winner (Object)
 
 ## Wager
 - [ ] ID (object ID)
