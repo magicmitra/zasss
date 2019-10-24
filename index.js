@@ -1,5 +1,6 @@
 const axios = require('axios');
-require('dotenv').config({ path: '.env' });
+const path = require('path');
+require('dotenv').config({ path: path.join('.env') });
 
 /**
  * Possible API endpoints to use :
