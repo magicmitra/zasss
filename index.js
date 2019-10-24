@@ -16,7 +16,6 @@ const callAPI = async () => {
         const catchCall = await axios.get(url);
         
         return catchCall.data;
-        // return catchCall.data;
     } catch(err) {
         console.log(err);
     }
