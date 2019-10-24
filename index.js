@@ -10,13 +10,12 @@ require('dotenv').config({ path: '.env' });
  */
 
 const season = `2019REG`;
-const url = `https://api.sportsdata.io/v3/nfl/scores/json/Standings/2019REG?key=${SPORTSDATAIO_API_KEY}`;
+const url = `https://api.sportsdata.io/v3/nfl/scores/json/Standings/${season}?key=${SPORTSDATAIO_API_KEY}`;
 const callAPI = async () => {
     try {
-        const catchCall = await axios.get(url5);
-        // return catchCall.data.weeks[0]; // url2 and url4
-        // return catchCall.data.weeks[1]; // url 4
-        return catchCall.data.weeks.games;
+        const catchCall = await axios.get(url);
+        
+        return catchCall.data;
         // return catchCall.data;
     } catch(err) {
         console.log(err);
